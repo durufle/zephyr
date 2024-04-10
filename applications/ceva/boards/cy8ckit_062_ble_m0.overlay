@@ -1,0 +1,21 @@
+/*
+ * Copyright (c) 2023 Laurent Bonnet
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/*
+ * Map trigger to D7 in arduino header 
+ * Refer to cy8ckit_062_common.dtsi
+ */
+
+/ {
+	trigger: trigger {
+		compatible = "external-trigger";
+		gpios = <&gpio_prt0 2 GPIO_ACTIVE_HIGH>;
+	};
+	sub_trigger: sub_trigger {
+		compatible = "external-trigger";
+		gpios = <&gpio_prt0 3 GPIO_ACTIVE_HIGH>;
+	};	
+};

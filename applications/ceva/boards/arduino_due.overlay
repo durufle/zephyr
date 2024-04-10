@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2023 Laurent Bonnet
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/**
+ * trigger 0 = D12, PD8 
+ * trigger 1 = D11, PD7
+ */
+
+/ {
+	trigger: trigger {
+		compatible = "external-trigger";
+		gpios = <&piod 8 0>;
+	};
+	sub_trigger: sub_trigger {
+		compatible = "external-trigger";
+		gpios = <&piod 7 0>;
+	};	
+};
+
+&piod {
+	status="okay";
+};

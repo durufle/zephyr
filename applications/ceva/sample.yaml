@@ -1,0 +1,13 @@
+sample:
+  name: CEVA application
+tests:
+  applications.ceva:
+    integration_platforms:
+      - qemu_x86
+    tags:
+      - serial
+      - uart
+    filter: CONFIG_SERIAL and
+            CONFIG_UART_INTERRUPT_DRIVEN and
+            dt_chosen_enabled("zephyr,shell-uart")
+    harness: keyboard

@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2023 Laurent Bonnet
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	chosen {
+		zephyr,console = &uart1;
+		zephyr,shell-uart = &uart1;
+		zephyr,uart-mcumgr = &uart1;
+	};
+	
+	trigger: trigger {
+		compatible = "external-trigger";
+		gpios = <&gpio1 3 GPIO_ACTIVE_HIGH>;
+	};
+	sub_trigger: sub_trigger {
+		compatible = "external-trigger";
+		gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+	};	
+};
+
+&uart2 {
+	status="okay";
+};

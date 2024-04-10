@@ -1,0 +1,12 @@
+width:
+  min: !!float 500e-9
+  max: !!float 510e-9
+  inc: !!float 5e-9
+
+delay:
+  min: !!float 0e-6
+  max: !!float 6e-6
+  inc: !!float 1e-9
+
+key: "2B7E151628AED2A6ABF7158809CF4F3C"
+plain: "0102030405060708090A0B0C0D0E0F10"
