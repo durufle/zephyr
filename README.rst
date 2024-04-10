@@ -1,6 +1,6 @@
 .. raw:: html
 
-This project offert a list of application built on top of Zephyr OS.
+This repository includes application built on top of the Zephyr OS.
 
 Getting Started
 ***************
