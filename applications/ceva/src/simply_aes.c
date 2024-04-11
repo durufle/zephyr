@@ -1,5 +1,5 @@
 /**
- * @file ul_aes.c
+ * @file simply_aes.c
  * @author laurent bonnet (laurent.woolcap@free.fr)
  * @brief Chip Evaluation firmware, Simple software AES
  * @copyright Copyright (c) 2023
@@ -46,7 +46,7 @@ static void key_expansion(void)
 }
 
 /**
- * @brief Add round 
+ * @brief Add round Key
  */
 static void AddRoundKey(void)
 {
@@ -57,7 +57,7 @@ static void AddRoundKey(void)
 }
 
 /**
- * @brief 
+ * @brief subbytes and shiftrow operation
  */
 static void SubBytes_ShiftRows(void)
 {
@@ -88,7 +88,7 @@ static void SubBytes_ShiftRows(void)
 }
 
 /**
- * @brief 
+ * @brief Execute round
  */
 static void aes_round( void )
 {

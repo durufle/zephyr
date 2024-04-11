@@ -2,7 +2,7 @@
 /**
  * @file utils.h
  * @author Laurent Bonnet (laurent.woolcap@free.fr)
- * @brief Chip evaluation firmware, simple utils interface file
+ * @brief Chip evaluation firmware, utils interface file
  * @copyright Copyright (c) 2023
  */
 #ifndef __UTILS_H

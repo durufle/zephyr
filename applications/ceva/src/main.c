@@ -85,8 +85,10 @@ uint16_t swap16(uint16_t val) {
 }
 
 /**
- * @brief characters from UART until line end is detected. Afterwards push the
+ * @brief Read characters from UART until line end is detected. Afterwards push the
  * data to the message queue.
+ * @param dev pointer on device
+ * @param user_data pointer on message data
  */
 void read(const struct device *dev, void *user_data) {
 	uint8_t c;
@@ -119,7 +121,7 @@ void read(const struct device *dev, void *user_data) {
 
 /**
  * @brief a null-terminated string character by character to the UART interface
- * @param pointer on output buffer
+ * @param buf pointer on output buffer
  */
 void send(char *buf) {
 	int lenght = strlen(buf);
@@ -157,7 +159,7 @@ int check(char *in, uint8_t *out) {
 
 /**
  * @brief while loop command
- * @param iteration
+ * @param iteration loop index max value
  */
 void while_loop(uint16_t iteration) {
 	uint16_t index, count = 0;
@@ -176,7 +178,7 @@ void while_loop(uint16_t iteration) {
 
 /**
  * @brief for loop command
- * @param iteration
+ * @param iteration loop index max value
  */
 void for_loop(uint16_t iteration) {
 	char result[24];
@@ -194,7 +196,7 @@ void for_loop(uint16_t iteration) {
 
 /**
  * @brief encrypt with simply aes command
- * @param pointer on data in
+ * @param data pointer on data in
  */
 void simply_aes(uint8_t * data) {
 	uint8_t result[2 * 16 + 4];
@@ -245,7 +247,7 @@ int validate_hw_compatibility(const struct device *dev)
 
 /**
  * @brief aes encrypt ecb mode
- * @param data pointer
+ * @param data pointer data in
  */
 void encrypt_aes_ebc(uint8_t * data) {
 	uint8_t result[2 * 16 + 6];

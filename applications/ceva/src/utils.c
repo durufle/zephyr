@@ -1,7 +1,8 @@
-/*
- * Copyright (c) 2016 Intel Corporation
- *
- * SPDX-License-Identifier: Apache-2.0
+/**
+ * @file utils.c
+ * @author Laurent Bonnet (laurent.woolcap@free.fr)
+ * @brief Chip evaluation firmware, utility toolbox
+ * @copyright Copyright (c) 2023
  */
 #include <stdio.h>
 #include <zephyr/kernel.h>
