@@ -6,7 +6,7 @@ import serial
 import serial.tools.list_ports
 
 USAGE = '''
-Usage:ls 
+Usage:
     python test_commands.py [options]
 
 Options:
