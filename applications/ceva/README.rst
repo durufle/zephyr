@@ -23,11 +23,11 @@ This application has been successfuly tested on the folwing targets:
   * - Targets
     - Informations
   * - Arduino due
-    - Arduino due <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>_
+    - `Arduino due <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>`_
   * - nrf5340dk
-    - nrf5340 DK <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>_
+    - `nrf5340 DK <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>`_
   * - nucleo-l476rg
-    - nucleo-l476rg <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>_
+    - `nucleo-l476rg <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>`_
    
 
 UART and Triggers
