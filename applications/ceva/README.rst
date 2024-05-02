@@ -16,20 +16,24 @@ Supported boards
 
 This application has been successfuly tested on the folwing targets:
 
-* - Targets
-  - link
-* - Arduino due
-  - nrf5340dk
-  - nucleo-l476rg
-  - nucleo-l552ze_q
-  - nucleo-h743zi
-  - nucleo_g071rb
-* - Arduino due <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>_
-  - nrf5340 DK <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>_
-  - nucleo-l476rg <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>_
-  -
-  -
-  -
+.. list-table:: Supported targets
+   :widths: 25 25
+   :header-rows: 1
+
+  * - Targets
+    - Informations
+  * - Arduino due
+    - nrf5340dk
+    - nucleo-l476rg
+    - nucleo-l552ze_q
+    - nucleo-h743zi
+    - nucleo_g071rb
+  * - Arduino due <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>_
+    - nrf5340 DK <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>_
+    - nucleo-l476rg <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>_
+    -
+    -
+    -
 
 
 UART and Triggers
