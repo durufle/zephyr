@@ -23,11 +23,19 @@ This application has been successfuly tested on the folwing targets:
   * - Targets
     - Informations
   * - Arduino due
-    - `Arduino due <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>`_
+    - `Arduino due board <https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html>`_
   * - nrf5340dk
-    - `nrf5340 DK <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>`_
+    - `nrf5340-DK board <https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html>`_
   * - nucleo-l476rg
-    - `nucleo-l476rg <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>`_
+    - `nucleo-l476rg board <https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html>`_
+  * - nucleo-g071rb
+    - `nucleo-g071rb board <https://docs.zephyrproject.org/latest/boards/st/nucleo_g071rb/doc/index.html>`_
+  * - nucleo-l552ze_q
+    - `nucleo-l552ze_q board <https://docs.zephyrproject.org/latest/boards/st/nucleo_l552ze_q/doc/nucleol552ze_q.html>`_
+  * - nucleo-h743zi
+    - `nucleo-h743zi board <https://docs.zephyrproject.org/latest/boards/st/nucleo_h743zi/doc/index.html>`_
+  * - nucleo-f401re
+    - `nucleo-f401re board <https://docs.zephyrproject.org/latest/boards/st/nucleo_f401re/doc/index.html>`_
    
 
 UART and Triggers

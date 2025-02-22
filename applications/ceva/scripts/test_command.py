@@ -143,7 +143,7 @@ def main(argv=None):
             print("-> {0}".format(com.send_command("FE8A02000020" + key + plain)))
             
         for i in  range(0,int(iteration)):
-            print(f"Test simply aes....{i + 1}")
+            print(f"Test crypto aes....{i + 1}")
             print("-> {0}".format(com.send_command("FE8A04000020" + key + plain)))            
         com.close()
 

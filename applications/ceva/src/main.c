@@ -6,6 +6,7 @@
 #include <zephyr/device.h>
 #include <zephyr/kernel.h>
 #include <zephyr/sys/sys_heap.h>
+#include <zephyr/kernel_version.h>
 #include <zephyr/drivers/uart.h>
 #include <zephyr/crypto/crypto.h>
 #include <zephyr/drivers/gpio.h>
@@ -288,6 +289,8 @@ out:
  */
 int dispatch(char *in) {
 	int status = 0;
+	uint32_t v;
+
 	// start watchdog
 
 	// check input data
@@ -299,7 +302,9 @@ int dispatch(char *in) {
 		else {
 			switch (command->ins) {
 				case INS_GET_INFO:
-					printk("Chip evaluation firmware board= %s, version=%s\r\n", CONFIG_BOARD,version);
+					v = sys_kernel_version_get();
+
+					printk("Chip evaluation Zephir Kernel= %d.%d.%d, board= %s, firmware version=%s\r\n", SYS_KERNEL_VER_MAJOR(v),SYS_KERNEL_VER_MINOR(v), SYS_KERNEL_VER_PATCHLEVEL(v),CONFIG_BOARD,version);
 					break; 
 
 				case INS_LOOP:

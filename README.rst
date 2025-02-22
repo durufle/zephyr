@@ -7,6 +7,7 @@ Getting Started
 First of all, start by referring to the zephir documentation. See the `Introduction to Zephyr`_ for a high-level overview,
 and the documentation's `Getting Started Guide`_ to start developing.
 
+
 Issue Tracking
 **************
 🐛 `Github Issues`_
