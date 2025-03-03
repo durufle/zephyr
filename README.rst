@@ -16,6 +16,13 @@ Issue Tracking
 **************
 🐛 `Github Issues`_
 
+Applications
+************
+
+`Chip evaluation (ceva)`_
+
+
+
 Ressources
 **********
  🌐 `Zephyr Project Website`_
@@ -24,3 +31,5 @@ Ressources
 .. _Introduction to Zephyr: https://docs.zephyrproject.org/latest/introduction/index.html
 .. _Getting Started Guide: https://docs.zephyrproject.org/latest/develop/getting_started/index.html
 .. _Github Issues: https://github.com/durufle/zephyr/issues
+.. _Chip evaluation (ceva): ./ceva/README.rst
+
