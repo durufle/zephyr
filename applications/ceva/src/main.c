@@ -41,7 +41,7 @@
 #define MSG_BYTE_SIZE (MSG_CHAR_SIZE	>>	2)
 #define MSG_WORD_SIZE (MSG_BYTE_SIZE	>>	2)
 
-#define version "0.0.0"
+#define version "0.1.0"
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 K_MSGQ_DEFINE(uart_msgq, MSG_CHAR_SIZE, 10, 4);
