@@ -39,9 +39,9 @@ UART and Triggers
 
 Test script
 ***********
-A python script is available to play with the firmware. See 
+A python script is available to play with the firmware. `See here`_
 
-.. literalinclude:: ./scripts/test_command.py
+.. _See here: ./scripts/test_command.py
 
 Building and Running
 ********************
