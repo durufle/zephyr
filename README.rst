@@ -7,10 +7,6 @@ Getting Started
 First of all, start by referring to the zephir documentation. See the `Introduction to Zephyr`_ for a high-level overview,
 and the documentation's `Getting Started Guide`_ to start developing.
 
-This application has been tested succesfuly with the following Zephy version:
-
-- 3.7.99
-- 4.1.0
 
 Issue Tracking
 **************
@@ -20,7 +16,6 @@ Applications
 ************
 
 `Chip evaluation (ceva)`_
-
 
 
 Ressources
