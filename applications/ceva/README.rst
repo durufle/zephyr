@@ -16,23 +16,26 @@ We assume that the zephyr environment is available.
 
 Supported boards
 ****************
-The supported boards are:
 
-#. `Nordic nRF5340 DK`_
-#. `Arduino DUE`_
-#. `Infineon CY8CKIT-062-BLE`_
-#. `nucleo_f401re`_
+
+This application has been successfuly tested on the following targets:
+
+#. `nrf5340_dk`_
+#. `Arduino_due`_
+#. `nucleo_l476rg`_
 #. `nucleo_g071rb`_
-#. `nucleo_h743zi`_
 #. `nucleo_l552ze_q`_
-#. `nucleo_u575zi_q`_
+#. `nucleo_l552ze_q`_
+#. `nucleo_h743zi`_
+#. `nucleo_f401re`_
+#. `nucleo_f446re`_
 
 
 UART and Triggers
 *****************
 - By default the virtual communication uart is used by the application.
 
-- Additionnaly GPIOs are used by the firmware in order to trig external device, during
+- AdditionnalyGPIOs are used by the firmware in order to trig external device, during
   command process. Refer to the board's overlay file to know which PIN number is used. 
 
 Test script
@@ -47,11 +50,12 @@ Build and flash the sample as follows, changing ``nrf52840dk_nrf52840_cpuapp`` f
 your board:
 
 .. code-block::
-
    west build -p always -b nrf52840dk_nrf52840_cpuapp application/ceva
    west flash
 
 For arduino due if you have trouble to flash, do the following:
+
+- If port access denied, then refer to `Arduino Fix Port Access`_
 - Push erase button for a few seconds, then push reset button for a short period, wait a second then
 - execute the following command again:
 
@@ -59,19 +63,14 @@ For arduino due if you have trouble to flash, do the following:
 
   west flash
 
-  
- Reference
- *********
-
-.. _Nordic nRF5340 DK: https://www.nordicsemi.com/Products/Development-hardware/nRF5340-DK
-.. _Arduino DUE: https://store.arduino.cc/products/arduino-due
-.. _Infineon CY8CKIT-062-BLE: https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-062-ble/#
-.. _nucleo_f401re: https://www.st.com/en/evaluation-tools/nucleo-f401re.html
-.. _nucleo_g071rb: https://www.st.com/en/evaluation-tools/nucleo-g071rb.html
-.. _nucleo_h743zi: https://www.st.com/en/evaluation-tools/nucleo-h743zi.html
-.. _nucleo_l476rg: https://www.st.com/en/evaluation-tools/nucleo-l476rg.html
-.. _nucleo_l552ze_q: https://www.st.com/en/evaluation-tools/nucleo-l552ze-q.html
-.. _nucleo_u575zi_q: https://www.st.com/en/evaluation-tools/nucleo-u575zi-q.html
 
 
-
+.. _Arduino Fix Port Access: https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
+.. _Arduino due: https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html
+.. _nrf5340_dk: https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html
+.. _nucleo_l476rg: https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html
+.. _nucleo_g071rb: https://docs.zephyrproject.org/latest/boards/st/nucleo_g071rb/doc/index.html
+.. _nucleo_l552ze_q: https://docs.zephyrproject.org/latest/boards/st/nucleo_l552ze_q/doc/nucleol552ze_q.html
+.. _nucleo_h743zi: https://docs.zephyrproject.org/latest/boards/st/nucleo_h743zi/doc/index.html 
+.. _nucleo_f401re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f401re/doc/index.html
+.. _nucleo_f446re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f446re/doc/index.html

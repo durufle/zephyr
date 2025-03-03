@@ -114,37 +114,13 @@ def main(argv=None):
         time.sleep(float(delay))
         print("\r\nGet version...")
         print("-> {0}".format(com.send_command("FE8000000000")))
-        print("Test Bad class...")
-        print("-> {0}".format(com.send_command("808600000000")))
-        print("Test Bad Instruction...")
-        print("-> {0}".format(com.send_command("FEFF00000000")))
-        print("Test loop, Bad lenght ....")
-        print("-> {0}".format(com.send_command("FE860200000200")))
-        print("Test loop, Bad parameter ....")
-        print("-> {0}".format(com.send_command("FE860500000200FF")))
-        print("Test for loop, 256 iteration....")
-        print("-> {0}".format(com.send_command("FE8604000002FFFF")))
-        print("Test while loop, 256 iteration....")
-        print("-> {0}".format(com.send_command("FE8602000002FFFF")))       
         plain = "0102030405060708090A0B0C0D0E0F10"
         key = "2B7E151628AED2A6ABF7158809CF4F3C"
-        print("Test encrypt AES, bad parameter")
-        print("-> {0}".format(com.send_command("FE8AFF000020" + key + plain)))
-        print("Test encrypt AES, bad lenght")
-        print("-> {0}".format(com.send_command("FE8AFF000010" + key + plain)))
-        print("Test simply aes....")
-        print("-> {0}".format(com.send_command("FE8A02000020" + key + plain)))
-        print("Test mbedtls aes....")
-        print("-> {0}".format(com.send_command("FE8A04000020" + key + plain)))  
-        
         # Execute simple aes iteration  
         for i in  range(0,int(iteration)):
             print(f"Test simply aes....{i + 1}")
             print("-> {0}".format(com.send_command("FE8A02000020" + key + plain)))
-            
-        for i in  range(0,int(iteration)):
-            print(f"Test crypto aes....{i + 1}")
-            print("-> {0}".format(com.send_command("FE8A04000020" + key + plain)))            
+         
         com.close()
 
 
