@@ -30,6 +30,11 @@ This application has been successfuly tested on the following targets:
 #. `nucleo f446re`_
 
 
+on the following Zephy version:
+
+- 3.7.99
+- 4.1.0
+
 UART and Triggers
 *****************
 - By default the virtual communication uart is used by the application.
