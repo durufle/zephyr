@@ -31,5 +31,5 @@ Ressources
 .. _Introduction to Zephyr: https://docs.zephyrproject.org/latest/introduction/index.html
 .. _Getting Started Guide: https://docs.zephyrproject.org/latest/develop/getting_started/index.html
 .. _Github Issues: https://github.com/durufle/zephyr/issues
-.. _Chip evaluation (ceva): ./ceva/README.rst
+.. _Chip evaluation (ceva): ./applications/ceva/README.rst
 
