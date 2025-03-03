@@ -19,7 +19,7 @@ Supported boards
 
 This application has been successfuly tested on the following targets:
 
-#. `nrf5340-dk`_
+#. `nrf5340 dk`_
 #. `Arduino due`_
 #. `nucleo l476rg`_
 #. `nucleo g071rb`_
