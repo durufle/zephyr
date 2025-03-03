@@ -17,18 +17,17 @@ We assume that the zephyr environment is available.
 Supported boards
 ****************
 
-
 This application has been successfuly tested on the following targets:
 
-#. `nrf5340_dk`_
-#. `Arduino_due`_
-#. `nucleo_l476rg`_
-#. `nucleo_g071rb`_
-#. `nucleo_l552ze_q`_
-#. `nucleo_l552ze_q`_
-#. `nucleo_h743zi`_
-#. `nucleo_f401re`_
-#. `nucleo_f446re`_
+#. `nrf5340-dk`_
+#. ²`Arduino due`_
+#. `nucleo l476rg`_
+#. `nucleo g071rb`_
+#. `nucleo l552ze_q`_
+#. `nucleo l552ze_q`_
+#. `nucleo h743zi`_
+#. `nucleo f401re`_
+#. `nucleo f446re`_
 
 
 UART and Triggers
@@ -67,10 +66,10 @@ For arduino due if you have trouble to flash, do the following:
 
 .. _Arduino Fix Port Access: https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
 .. _Arduino due: https://docs.zephyrproject.org/latest/boards/arduino/due/doc/index.html
-.. _nrf5340_dk: https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html
-.. _nucleo_l476rg: https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html
-.. _nucleo_g071rb: https://docs.zephyrproject.org/latest/boards/st/nucleo_g071rb/doc/index.html
-.. _nucleo_l552ze_q: https://docs.zephyrproject.org/latest/boards/st/nucleo_l552ze_q/doc/nucleol552ze_q.html
-.. _nucleo_h743zi: https://docs.zephyrproject.org/latest/boards/st/nucleo_h743zi/doc/index.html 
-.. _nucleo_f401re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f401re/doc/index.html
-.. _nucleo_f446re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f446re/doc/index.html
+.. _nrf5340 dk: https://docs.zephyrproject.org/latest/boards/nordic/nrf5340dk/doc/index.html
+.. _nucleo l476rg: https://docs.zephyrproject.org/latest/boards/st/nucleo_l476rg/doc/index.html
+.. _nucleo g071rb: https://docs.zephyrproject.org/latest/boards/st/nucleo_g071rb/doc/index.html
+.. _nucleo l552ze_q: https://docs.zephyrproject.org/latest/boards/st/nucleo_l552ze_q/doc/nucleol552ze_q.html
+.. _nucleo h743zi: https://docs.zephyrproject.org/latest/boards/st/nucleo_h743zi/doc/index.html 
+.. _nucleo f401re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f401re/doc/index.html
+.. _nucleo f446re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f446re/doc/index.html
