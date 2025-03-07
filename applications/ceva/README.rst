@@ -28,6 +28,7 @@ This application has been successfuly tested on the following targets:
 #. `nucleo h743zi`_
 #. `nucleo f401re`_
 #. `nucleo f446re`_
+#. `nucleo f429zi`_
 
 
 on the following Zephy version:
@@ -50,11 +51,11 @@ A python script is available to play with the firmware. `See here`_
 
 Building and Running
 ********************
-Build and flash the sample as follows, changing ``nrf52840dk_nrf52840_cpuapp`` for
+Build and flash the sample as follows, changing ``nucleo_f429zi` for
 your board:
 
 .. code-block::
-   west build -p always -b nrf52840dk_nrf52840_cpuapp application/ceva
+   west build -p always -b nucleo_f429zi application/ceva
    west flash
 
 For arduino due if you have trouble to flash, do the following:
@@ -78,3 +79,4 @@ For arduino due if you have trouble to flash, do the following:
 .. _nucleo h743zi: https://docs.zephyrproject.org/latest/boards/st/nucleo_h743zi/doc/index.html 
 .. _nucleo f401re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f401re/doc/index.html
 .. _nucleo f446re: https://docs.zephyrproject.org/latest/boards/st/nucleo_f446re/doc/index.html
+.. _nucleo f429zi: https://docs.zephyrproject.org/latest/boards/st/nucleo_f429zi/doc/index.html
